@@ -4,11 +4,10 @@ ActiveAdmin.register_page "Edit" do
 
   content title: proc{ I18n.t("active_admin.edit") } do
 
-      form_for @product do |f|
-        f.label "You can make your changes here"
-        f.text_area "test"
-      end
-
+    section "Show stuff here" do
+      form.label "You can make your changes here"
+      form.textarea "test"
+    end
 
   end # content
 end
